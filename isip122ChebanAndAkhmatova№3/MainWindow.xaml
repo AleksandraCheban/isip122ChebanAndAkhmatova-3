@@ -7,10 +7,23 @@
         mc:Ignorable="d"
         Title="Вычисление оптимального веса человека" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="47*"/>
-            <ColumnDefinition Width="753*"/>
-        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="468,67,0,0" TextWrapping="Wrap" Text="Пол" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="65,94,0,0" TextWrapping="Wrap" Text="Рост в сантиметрах" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="65,138,0,0" TextWrapping="Wrap" Text="Вес в килограммах" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock TextWrapping="Wrap"  HorizontalAlignment="Left" Margin="65,265,0,0" FontWeight="Bold" Foreground="Red" VerticalAlignment="Top" FontSize="20"> 
+            Оптимальный вес
+            <LineBreak />
+            Сравнительная 
+            <LineBreak />
+            характеристика
+        </TextBlock>
+        <RadioButton Content="Мужчина" HorizontalAlignment="Left" Margin="495,109,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <RadioButton Content="Женщина" HorizontalAlignment="Left" Margin="495,139,0,0" VerticalAlignment="Top " FontSize="20"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="123" Margin="468,94,0,0" VerticalAlignment="Top" Width="247"/>
+        <TextBox HorizontalAlignment="Left" Margin="276,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="276,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128" Height="26"/>
+        <Button Content="Вычислить" HorizontalAlignment="Left" Margin="468,265,0,0" VerticalAlignment="Top" FontSize="20"/>
+
 
     </Grid>
 </Window>
