@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:isip122ChebanAndAkhmatova_3"
         mc:Ignorable="d"
-        Title="Вычисление оптимального веса человека" Height="450" Width="800">
+        Title="Вычисление оптимального веса человека" Height="450" Width="800" Closing="MainWindow_Closing">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="468,67,0,0" TextWrapping="Wrap" Text="Пол" VerticalAlignment="Top" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="65,94,0,0" TextWrapping="Wrap" Text="Рост в сантиметрах" VerticalAlignment="Top" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="65,138,0,0" TextWrapping="Wrap" Text="Вес в килограммах" VerticalAlignment="Top" FontSize="20"/>
+
         <TextBlock TextWrapping="Wrap"  HorizontalAlignment="Left" Margin="65,265,0,0" FontWeight="Bold" Foreground="Red" VerticalAlignment="Top" FontSize="20"> 
             Оптимальный вес
             <LineBreak />
@@ -17,11 +18,18 @@
             <LineBreak />
             характеристика
         </TextBlock>
+
         <RadioButton Name="RB_man" Content="Мужчина" HorizontalAlignment="Left" Margin="495,109,0,0" VerticalAlignment="Top" FontSize="20"/>
         <RadioButton Name="RB_woman" Content="Женщина" HorizontalAlignment="Left" Margin="495,139,0,0" VerticalAlignment="Top " FontSize="20"/>
+
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="123" Margin="468,94,0,0" VerticalAlignment="Top" Width="247"/>
+
         <TextBox x:Name="textBoxHeight" HorizontalAlignment="Left" Margin="276,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128" Height="26"/>
         <TextBox x:Name="textBoxweight" HorizontalAlignment="Left" Margin="276,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128" Height="26"/>
+
+        <TextBox x:Name="textBox_optimal_weight" Text="" HorizontalAlignment="Left" Margin="276,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Height="26" IsEnabled="False" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="textBox_comparison" Text="" HorizontalAlignment="Left" Margin="276,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Height="49" IsEnabled="False" FontSize="14" FontWeight="Bold"/>
+
         <Button Content="Вычислить" HorizontalAlignment="Left" Margin="468,265,0,0" VerticalAlignment="Top" FontSize="20" Click="ButtonClick"/>
 
 
